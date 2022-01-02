@@ -86,18 +86,18 @@ public with sharing class ObjectTriggerHandler extends TriggerConfigBase impleme
 	  return handlerShouldExecute && sObjectShouldExecute;
 	}
 	@TestVisible
-	private List<Trigger_Handler__mdt> handlerMetadata {
-		get {
-			if (handlerMetadata == null) {
-				handlerMetadata = getHandlerAction();
-			}
-			return handlerMetadata;
+	private List < Trigger_Handler__mdt > handlerMetadata {
+	  get {
+		if (handlerMetadata == null) {
+		  handlerMetadata = getHandlerAction();
 		}
-		set;
+		return handlerMetadata;
+	  }
+	  set;
 	}
 	// Invoke handler functions to cpuple implemented handler with context specific method 
 	private void invokeHandler(TriggerOperation context, List < SObject > newList, List < SObject > oldList) {
-	//   List < Trigger_Handler__mdt > handlerMetadata = getHandlerAction();
+	  //   List < Trigger_Handler__mdt > handlerMetadata = getHandlerAction();
 	  for (Trigger_Handler__mdt handlerMdt: handlerMetadata) {
 		Object TriggerContextAction;
 		Try {
@@ -129,7 +129,11 @@ public with sharing class ObjectTriggerHandler extends TriggerConfigBase impleme
 	// @TODO : To be tested 	  
 	private void handleException(String error, String className, TriggerOperation triggerOperation) {
 	  throw new ObjectTriggerHandlerException(
-		String.format(error, new List < String > {className,String.valueOf(triggerOperation),this.sObjectName}));
+		String.format(error, new List < String > {
+		  className,
+		  String.valueOf(triggerOperation),
+		  this.sObjectName
+		}));
 	}
 	/**Begin Utility for Handler/Helper specific bypass */
 	public static void bypassHandler(String handlerName) {

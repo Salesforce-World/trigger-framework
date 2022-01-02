@@ -2,7 +2,6 @@
  * Author:Rajesh Kumar
  */
 
-
 public inherited sharing virtual class TriggerConfigBase {
 	@TestVisible
 	private static Set < String > bypassObjectTrigger;
@@ -30,7 +29,7 @@ public inherited sharing virtual class TriggerConfigBase {
 	  if (!isrunAllowed()) {
 		return;
 	  }
-
+  
 	  // Check context and instance type 
 	  if (this.triggerContext == System.TriggerOperation.BEFORE_INSERT &&
 		this instanceof TriggerContextAction.ContextAction) {
