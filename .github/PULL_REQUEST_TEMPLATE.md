@@ -3,7 +3,7 @@ Describe your changes in detail .
 
 ## Type of change
 Put an `x` in all boxes that apply 
-- [ ] Bug fix (non-breaking change which fixes an issue)
+- [x] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
 
@@ -11,12 +11,6 @@ Put an `x` in all boxes that apply
 You can ignore this section if there is no relevant screenshot based on changes .
 # Test
 Please provide link and test setup [if any] for reviewers to verify the changes .
-
-**Test Configuration**:
-* Firmware version:
-* Hardware:
-* Toolchain:
-* SDK:
 
 # Checklist:
 Put an `x` in all boxes that apply 
