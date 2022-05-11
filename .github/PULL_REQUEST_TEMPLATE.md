@@ -1,24 +1,16 @@
 # Description
-
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
-
-Fixes # (issue)
+Describe your changes in detail .
 
 ## Type of change
-
-Please delete options that are not relevant.
-
+Put an `x` in all boxes that apply 
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+- [ ] Breaking change (fix or feature that would cause existing functionality to change)
 
-# How Has This Been Tested?
-
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
-
-- [ ] Test A
-- [ ] Test B
+# Screenshots 
+You can ignore this section if there is no relevant screenshot based on changes .
+# Test
+Please provide link and test setup [if any] for reviewers to verify the changes .
 
 **Test Configuration**:
 * Firmware version:
@@ -27,12 +19,12 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 * SDK:
 
 # Checklist:
-
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+Put an `x` in all boxes that apply 
+- [ ] I have reviewed sonarqube warning and took appropriate action .
+- [ ] Self review of the code completed .
+- [ ] Appropriate action has been taken for common code changes .
+- [ ] PR Description having type of changes . 
+- [ ] I have tested my business functionality with applicable profiles/permissions .
+- [ ] I have test enviornment link and test data for reviewer to verify .
+- [ ] New and existing unit tests pass locally with my changes .
+- [ ] Functional Test Cases has been passed for new and existing changes . [Can be ignored for now]
